@@ -7,7 +7,7 @@ int main(int argc, char **argv) {
         return -1;
     }
 
-    int value = 1;
+    size_t value = 1;
 
     int found_first = 0;
     for (int i = 0; i < strlen(argv[1]); i++) {
@@ -32,7 +32,7 @@ int main(int argc, char **argv) {
         }
     }
 
-    printf("%d\n", value);
+    printf("%zu\n", value);
 
     return 0;
 }
